@@ -18,10 +18,23 @@
     min-width: 200px;
 }
 
+.image-wrapper{
+    display: inline-block;
+    width: 200px;;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 .chars-item img{
     width: 200px;;
     height: 200px;
-    clip-path: circle(50%)
+    clip-path: circle(50%);
+    transition: 1s;
+}
+
+.chars-item img:hover {
+    transform: scale(1.2);
 }
 
 .chars-item__style {
