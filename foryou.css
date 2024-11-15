@@ -11,26 +11,34 @@
 }
 
 .foryou-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    display: inline-block;
+    overflow: hidden;
 }
 
-.foryou-item img{
+.foryou-item img {
+    display: block;
     max-width: 300px;
     object-fit: cover;
+    transition: 1s;
+    /* Время эффекта */
+}
+
+.foryou-item img:hover {
+    transform: scale(1.2);
+    /* Увеличиваем масштаб */
+
 }
 
 
 @media (max-width: 850px) {
-    .foryou-item img{
+    .foryou-item img {
         max-width: 200px;
         object-fit: cover;
     }
 }
 
 @media (max-width: 770px) {
-    .foryou__list{
+    .foryou__list {
         flex-direction: column;
         align-items: center;
     }
