@@ -1,0 +1,44 @@
+.hero1 { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+} 
+
+.hero1__image {
+    width: 700px;
+    margin-top: 20px;
+}
+
+.hero1__text {
+    font-size: 24px;
+    font-weight:lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    display: flex;
+    color: #62236c;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 45px;
+    letter-spacing: .5px;
+}
+
+@media (max-width: 910px) {
+
+
+
+    .hero1__text{
+        font-size:20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+
+
+    .hero1__text{
+        font-size:16px;
+    }
+}
